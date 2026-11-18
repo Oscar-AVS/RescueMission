@@ -1,0 +1,126 @@
+cat > .gitignore << 'EOF'
+# .gitignore en la RAIZ del repo; el proyecto de Unity vive en GameRescue/
+# Base: https://github.com/github/gitignore/blob/main/Unity.gitignore
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+.vs/
+.utmp/
+*.DotSettings.user
+
+# Carpetas generadas por Unity (sin "/" inicial: aplican a cualquier nivel)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+*.log
+
+# Ajustes personales de cada quien
+GameRescue/UserSettings/
+
+# Memory Profiler / grabaciones
+GameRescue/[Mm]emory[Cc]aptures/
+GameRescue/[Rr]ecordings/
+
+# Rider
+GameRescue/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Gradle
+.gradle/
+
+# Archivos de solucion y proyecto autogenerados
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vsconfig
+
+# Meta de archivos generados
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash reports y Mono
+sysinfo.txt
+.dirstamp
+mono_crash.*
+tmpinst-dir.stamp
+
+# Builds
+GameRescue/*_BackUpThisFolder_ButDontShipItWithYourGame/
+GameRescue/*_BurstDebugInformation_DoNotShip/
+*.apk
+*.aab
+*.obb
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# Crashlytics
+crashlytics-build.properties
+
+# Blender y TouchDesigner
+GameRescue/[Aa]ssets/**/*.blend1
+GameRescue/[Aa]ssets/**/*.blend1.meta
+GameRescue/[Aa]ssets/**/TDImportCache/
+GameRescue/[Aa]ssets/**/TDImportCache.meta
+
+# Unity Crash Recovery
+GameRescue/[Aa]ssets/_Recovery/
+GameRescue/[Aa]ssets/_Recovery.meta
+
+# Addressables
+GameRescue/[Aa]ssets/AddressableAssetsData/*/addressables_content_state.bin
+GameRescue/[Aa]ssets/AddressableAssetsData/*/addressables_content_state.bin.meta
+GameRescue/[Aa]ssets/AddressableAssetsData/link.xml
+GameRescue/[Aa]ssets/AddressableAssetsData/link.xml.meta
+GameRescue/[Aa]ssets/Addressables_Temp/
+GameRescue/[Aa]ssets/Addressables_Temp.meta
+GameRescue/[Aa]ssets/StreamingAssets/aa/
+GameRescue/[Aa]ssets/StreamingAssets/aa.meta
+GameRescue/ServerData/
+
+# EDM4U y Android
+GameRescue/[Aa]ssets/GeneratedLocalRepo/
+GameRescue/[Aa]ssets/GeneratedLocalRepo.meta
+GameRescue/[Aa]ssets/Plugins/Android/**/*.gradle.backup*
+GameRescue/[Aa]ssets/Plugins/Android/**/local.properties
+
+# Test Framework
+GameRescue/[Aa]ssets/Resources/PerformanceTestRunInfo.json
+GameRescue/[Aa]ssets/Resources/PerformanceTestRunInfo.json.meta
+GameRescue/[Aa]ssets/Resources/PerformanceTestRunSettings.json
+GameRescue/[Aa]ssets/Resources/PerformanceTestRunSettings.json.meta
+GameRescue/[Aa]ssets/InitTestScene*.unity
+GameRescue/[Aa]ssets/InitTestScene*.unity.meta
+
+# Visual Scripting
+GameRescue/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers/
+GameRescue/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+GameRescue/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+GameRescue/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+
+# UI Toolkit y cache de escenas
+GameRescue/UIElementsSchema/
+GameRescue/[Aa]ssets/[Ss]ceneDependencyCache*
+EOF
